@@ -1,10 +1,12 @@
 # Lost-Angel-Investigator
 
-Team Members-
-	Harsh Shrirame
-	Bhavesh Kewalramani
-	Daksh Kothari
-	Darshan Jawandhiya
+Team Members -
+<ul>
+<li>Harsh Shrirame</li>
+<li>Bhavesh Kewalramani</li>
+<li>Daksh Kothari</li>
+<li>Darshan Jawandhiya</li>
+</ul>
 
 In India many children are reported missing every year. Among them large number of cases are never found therefore one of the project's key goals is to create a missing children (people) locate application that may assist ordinary people whose loved ones have been abducted, missed, or rescued by the people. The public can upload photos of missing children, along with landmarks and to our webpage. The photo will be immediately matched to the missing child's registered photos in the database. The supplied child photograph is classified, and the photo with the best match is displayed from the database of missing children. Using the facial image uploaded by the public, a deep learning model is trained to accurately identify the missing child from the missing child image database.
 
