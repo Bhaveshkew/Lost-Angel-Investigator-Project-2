@@ -27,11 +27,22 @@
         margin-left: 200px;
         margin-bottom: 10px;
     }
+    .det_image{
+        margin-right: 100px;
+    }
     img {
         max-width: 200px;
         max-height: 200px;
         display: block;
         margin: 0 auto;
+    }
+    .label{
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .flexi{
+        margin-left:  225px;
+        display: flex;
     }
 </style>
 </head>
@@ -47,22 +58,30 @@
     <br/>
     <br/>
     <br/>
-    <div class="det_image">
-        <img src = {{ path }}/>
+    <div class = "flexi">
+        <div class="det_image">
+            <img src = {{ path }}/>
+            <p class = "label">Detected Child Class</p>
+        </div>
+        <div class="det_image">
+            <img src = {{ path1 }}/>
+            <p class = "label" >Uploaded Image Child Class</p>
+        </div>
     </div>
+    
     <br/>
     <br/>
     <div class="det_name">
-       <b>Name:</b>  &emsp;&emsp;&emsp;{{ detected_person.name }}
+       <b>Name :</b>  &emsp;&emsp;&emsp;{{ detected_person.name }}
     </div>
     <div class="det_add">
-        <b>Address:</b>  &emsp;&emsp;{{ detected_person.address}}
+        <b>Address :</b>  &emsp;&emsp;{{ detected_person.address}}
     </div>
     <div class="det_number">
         <b>Mobile No.:</b>  &emsp;{{ detected_person.mobile_num }}
     </div>
-    <div class ="confidence">
-        
+    <div class ="det_number">
+        <b>Match (%) :</b>  &emsp;{{ confi}}
     </div>
 </div>
 </form>

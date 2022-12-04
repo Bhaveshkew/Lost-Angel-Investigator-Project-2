@@ -39,13 +39,15 @@ def printt(request):
             image_obj = Person.objects.get(pk = pk)
             fileroot = str(image_obj.image)
             filepath = os.path.join(settings.MEDIA_ROOT , fileroot)
-            print(filepath)
+            ffp = "/media/" + fileroot
             img , cnt ,score= pipeline_model(filepath)
             
-            if score*100<30:
-                return render(request, 'notfound.html')
+            if score*100 < 49.5:
+               return render(request, 'notfound.html')
             detected_person = RegisteredChild.objects.get(pk = cnt)
             path_to_send= ".." + detected_person.image.url
-            return render(request , 'home.html' , {'detected_person' : detected_person , 'path': path_to_send,"path1":filepath})
+            print(filepath)
+            print(detected_person.image.url)
+            return render(request , 'home.html' , {'detected_person' : detected_person , 'path': path_to_send,"path1":ffp, 'confi' :round(score*100,2) })
             
     return render(request , 'upload.html' , {'form':form})
