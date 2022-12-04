@@ -29,7 +29,7 @@ Installation Process
  
 1. First clone git repository.<br>
 Write command in cmd <br>
-command - git clone https://github.com/DakshKothari18/HackathonWCE
+command - git clone https://github.com/Bhaveshkew/Lost-Angel-Investigator.git
 
 2. Change directory to this folder <br>
 command - cd HackathonWCE  <br>
